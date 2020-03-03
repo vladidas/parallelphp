@@ -1,0 +1,22 @@
+{
+    "name": "vladidas/parallel-php",
+    "description": "Running PHP functions in parallel thread without blocking.",
+    "authors": [
+        {
+            "name": "Vlad Golubtsov",
+            "email": "v.golubtsov@bvblogic.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vladidas\\ParallelPHP\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.0",
+        "amphp/parallel-functions": "^0.1.3",
+        "phpunit/phpunit": "^8.5"
+    },
+    "require-dev": {
+    }
+}
