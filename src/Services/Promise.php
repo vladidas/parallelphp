@@ -38,7 +38,7 @@ class Promise implements PromiseInterface
         }
 
         if (!is_iterable($items)) {
-            throw new \Exception("Items are non-iterable!");
+            throw new \Exception('Items are non-iterable!');
         }
 
         foreach ($items as $key => $item) {
@@ -65,7 +65,7 @@ class Promise implements PromiseInterface
     public function removeItem($key): self
     {
         if (!is_iterable($this->items)) {
-            throw new \Exception("Items are non-iterable!");
+            throw new \Exception('Items are non-iterable!');
         }
 
         if (!array_key_exists($key, $this->items)) {
