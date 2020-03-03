@@ -7,7 +7,7 @@
 This package allows you to call functions and execute them in parallel without waiting for the previous one to complete.
 This allows you to speed up the execution of the script as a whole.
 
-####For example:
+### For example:
 ```php
 <?php
    // You have three functions:
@@ -153,35 +153,34 @@ $promise
 You can also add items using __constructor in Promise class:
 
 ```php
-```php
 <?php
 
 $promise = new Promise([
     function () {
-           sleep(1);
-           return 11;
-       },
-       function () {
-           sleep(2);
-           return 22;
-       },
-       function () {
-           sleep(3);
-           return 33;
-       }
+        sleep(1);
+        return 11;
+    },
+    function () {
+        sleep(2);
+        return 22;
+    },
+    function () {
+        sleep(3);
+        return 33;
+    }
 ]);
 
 ...
 
 $promise
-        ->addItem(function () {
-            sleep(1);
-            return 11;
-        })
-        ->removeItem(2)
-        ->then(function ($first, $second, $third) {
-            var_dump('then #1:', $first, $second, $third);
-        });
+    ->addItem(function () {
+        sleep(1);
+        return 11;
+    })
+    ->removeItem(2)
+    ->then(function ($first, $second, $third) {
+        var_dump('then #1:', $first, $second, $third);
+    });
 
 ...
 ```
