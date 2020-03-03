@@ -18,11 +18,11 @@ interface PromiseInterface
     public function addItem(callable $item): Promise;
 
     /**
-     * @param int $key
+     * @param $key
      * @return Promise
      * @throws \Exception
      */
-    public function removeItem(int $key): Promise;
+    public function removeItem($key): Promise;
 
     /**
      * @return array|null

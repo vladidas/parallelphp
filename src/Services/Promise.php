@@ -58,11 +58,11 @@ class Promise implements PromiseInterface
     }
 
     /**
-     * @param int $key
+     * @param $key
      * @return Promise
      * @throws \Exception
      */
-    public function removeItem(int $key): self
+    public function removeItem($key): self
     {
         if (!is_iterable($this->items)) {
             throw new \Exception("Items are non-iterable!");
