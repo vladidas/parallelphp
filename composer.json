@@ -1,6 +1,9 @@
 {
     "name": "vladidas/parallel-php",
     "description": "Running PHP functions in parallel thread without blocking.",
+    "keywords": ["library", "laravel", "PHP", "parallel", "amphp"],
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Vlad Golubtsov",
