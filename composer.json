@@ -1,5 +1,5 @@
 {
-    "name": "vladidas/parallel-php",
+    "name": "vladidas/parallelphp",
     "description": "Running PHP functions in parallel thread without blocking.",
     "keywords": ["library", "laravel", "PHP", "parallel", "amphp"],
     "type": "library",
